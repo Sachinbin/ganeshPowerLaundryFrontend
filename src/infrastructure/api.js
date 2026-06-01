@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = 'https://laundry-backend-7vcd.onrender.com' || "http://localhost:3000";
+const baseURL = 'https://laundry-backend-wdek.onrender.com' || "http://localhost:3000";
 
 const api = axios.create({
   baseURL,
