@@ -7,9 +7,9 @@ export const navItems = [
 
 export const services = [
   {
-    title: "Wash and Fold",
-    text: "Everyday garments sorted, washed, dried, folded, and packed with a clean batch flow.",
-    price: "From Rs. 70/kg",
+    title: "Normal Iron",
+    text: "Professional ironing service for daily wear clothes, ensuring a crisp, wrinkle-free finish and neat presentation.",
+    price: "From Rs. 12/piece",
   },
   {
     title: "Steam Iron",

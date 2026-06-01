@@ -74,6 +74,8 @@ export function Dashboard() {
     const values = Object.fromEntries(formData);
     try {
       const created = await createOrder(values);
+      console.log(created);
+      
       const mapped = {
         id: created._id || created.id,
         customer: created.customer,
@@ -85,7 +87,7 @@ export function Dashboard() {
         status: created.status || "Pending",
       };
       setOrders((currentOrders) => [mapped, ...currentOrders]);
-      event.currentTarget.reset();
+      event.target.reset();
     } catch (err) {
       // TODO: show error UI
       console.error(err);
@@ -187,10 +189,10 @@ export function Dashboard() {
               Customer Name
               <input name="customer" required />
             </label>
-            <label>
+            {/* <label>
               Phone
               <input name="phone" required />
-            </label>
+            </label> */}
             <label>
               Service
               <select name="service" defaultValue={blankForm.service}>
